@@ -1,0 +1,19 @@
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border:none;
+  border-left: 4px solid #3CBC8D;
+  background-color: #d8dadb;
+  box-sizing: border-box;
+}
+
+.body-add{
+  margin-top: 5%;
+  padding: 20px 20px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: white;
+  border-radius: 2px;
+  border-left: 4px solid rgb(32, 204, 141);
+  background-color: #2c3e50;
+}

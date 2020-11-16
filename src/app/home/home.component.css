@@ -8,6 +8,8 @@ header {
   color: white;
   font-family: "Comic Sans MS", cursive, sans-serif;
   align-items: center;
+  border:none;
+  border-left: 4px solid red;
 }
 
 header span {
