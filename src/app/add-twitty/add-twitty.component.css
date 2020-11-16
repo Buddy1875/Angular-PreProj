@@ -6,6 +6,10 @@ input[type="text"] {
   border-left: 4px solid #3CBC8D;
   background-color: #d8dadb;
   box-sizing: border-box;
+  color: rgb(38, 159, 163);
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 .body-add{
