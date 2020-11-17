@@ -2,8 +2,8 @@ input[type="text"] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
-  border:none;
-  border-left: 4px solid #3CBC8D;
+  border: none;
+  border-left: 4px solid #3cbc8d;
   background-color: #d8dadb;
   box-sizing: border-box;
   color: rgb(38, 159, 163);
@@ -12,17 +12,23 @@ input[type="text"] {
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
-.body-add{
-  margin-top: 5%;
+.body-add {
   padding: 20px 20px;
   font-family: "Comic Sans MS", cursive, sans-serif;
   color: white;
   border-radius: 2px;
-  border-left: 4px solid rgb(32, 204, 141);
-  background-color: #2c3e50;
 }
 
-.btn{
+.btn {
+  margin: 10px;
+  color: white;
+  font-family: "Comic Sans MS", cursive, sans-serif;
   background-color: #2c3e50;
-  
+  border: 2px solid rgb(46, 175, 46);
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background-color: rgba(46, 175, 46, 0.849);
 }
