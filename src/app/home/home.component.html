@@ -1,9 +1,11 @@
 <header>
 	<span>Twitty</span>
 	<nav>
-		<a href="/">Home</a> |
-		<a href="/">Add-line</a>
+		<a routerLink="time-line">Home</a> |
+		<a routerLink="add-twitty">Add-line</a>
 	</nav>
 </header>
 
-<app-add-twitty></app-add-twitty>
+<section>
+  <router-outlet></router-outlet>
+<section>

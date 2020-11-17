@@ -1,6 +1,9 @@
 <div class="body-add">
-      <label for="fname">Name</label>
-      <input type="text" id="fname" name="fname">
-      <label for="lname">Command</label>
-      <input type="text" id="lname" name="lname">
+	<form [formGroup]="form">
+		<label for="fname">Name</label>
+		<input type="text" formControlName="name" name="name">
+		<label for="lname">Command</label>
+		<input type="text" formControlName="msg" name="msg">
+		<input type="submit" value="Submit">
+  </form>
 </div>
