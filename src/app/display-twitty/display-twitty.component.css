@@ -1,0 +1,7 @@
+.container {
+  background-color: rgba(141, 140, 140, 0.322);
+  padding: 10px;
+  color: white;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  border-left: 4px solid rgb(30, 255, 0);
+}
