@@ -9,7 +9,7 @@ export class FirebaseService {
   constructor(private firestore: AngularFirestore) {}
 
   getTweet() {
-    let DocRef = this.firestore.collection<Tweet>("tweet", e =>
+    let DocRef = this.firestore.collection<Tweet>("twitty", e =>
       e.orderBy("date", "desc")
     );
     return DocRef.valueChanges();

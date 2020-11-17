@@ -12,10 +12,15 @@ input[type="text"] {
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
+input:hover {
+  background-color: white;
+}
+
 .body-add {
   padding: 20px 20px;
   font-family: "Comic Sans MS", cursive, sans-serif;
   color: white;
+  font-weight: bold;
   border-radius: 2px;
 }
 
