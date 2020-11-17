@@ -1,3 +1,5 @@
+<span>[ Time line ]<span>
+<hr>
 <div class="container" *ngFor="let tweet of tweet">
-	<app-display-twitty></app-display-twitty>
+	<app-display-twitty [tweet]="tweet"></app-display-twitty>
 </div>

@@ -14,6 +14,7 @@ import { HomeComponent } from "./home/home.component";
 import { TimeLineComponent } from "./time-line/time-line.component";
 import { DisplayTwittyComponent } from "./display-twitty/display-twitty.component";
 
+
 //service
 import { FirebaseService } from "./firebase.service";
 @NgModule({

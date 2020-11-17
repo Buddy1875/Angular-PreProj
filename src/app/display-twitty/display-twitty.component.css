@@ -7,6 +7,16 @@
   border-left: 4px solid rgb(30, 255, 0);
 }
 
-.container:hover{
+.container:hover {
   background-color: rgba(255, 255, 255, 0.089);
+}
+
+.body {
+  margin: 10px 25px;
+  font-size: 16px;
+}
+
+.datetime{
+  color: rgb(84, 124, 47);
+  font-size: 16px;
 }
