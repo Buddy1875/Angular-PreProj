@@ -30,7 +30,7 @@ export class FirebaseService {
     });
     return ref;
   }
-
+//
   deleteTweet(id: string) {
     return this.firestore
       .collection("tweet")
