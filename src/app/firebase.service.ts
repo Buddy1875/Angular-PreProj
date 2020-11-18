@@ -17,7 +17,7 @@ export class FirebaseService {
 
   addTweet(name: string, messege: string) {
     let tweet = {
-      mame: name,
+      name: name,
       msg: messege,
       date: firebase.default.firestore.Timestamp.now()
     };
