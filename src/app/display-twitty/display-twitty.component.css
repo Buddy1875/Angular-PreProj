@@ -32,12 +32,12 @@
   border-radius: 4px;
 }
 
-.del {
-  display: flex;
-  align-items: center;
+.btn-del:hover {
+  background-color: rgb(175, 83, 46);
 }
 
-.head{
+.head {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
