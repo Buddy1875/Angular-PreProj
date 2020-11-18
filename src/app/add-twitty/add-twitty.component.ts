@@ -20,4 +20,9 @@ export class AddTwittyComponent implements OnInit {
   ) {}
 
   ngOnInit() {}
+
+  onTweet() {
+    this.firebaseService.addTweet(this.form.value.name, this.form.value.msg);
+    this.router.navigate(["/time-line"]);
+  }
 }
