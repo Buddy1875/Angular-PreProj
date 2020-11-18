@@ -17,15 +17,27 @@
 }
 
 .datetime {
+  margin: 0 10px;
   color: rgb(84, 124, 47);
   font-size: 16px;
 }
 
 .btn-del {
-  border: none;
+  margin: 10px;
+  color: white;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background-color: #2c3e50;
+  border: 2px solid rgb(175, 83, 46);
+  padding: 10px 20px;
+  border-radius: 4px;
 }
 
 .del {
   display: flex;
-  flex-direction: space-between;
+  align-items: center;
+}
+
+.head{
+  display: flex;
+  justify-content: space-between;
 }

@@ -1,10 +1,13 @@
 <div class="container">
 	<div class="head">
-    <div class="del">
-      <span>Name : </span> {{ tweet.name }} | <span class="datetime"> {{ tweet.date }} </span>
-      <input type="button" value="Delete" class="btn-del">
+		<div class="del">
+			<span>Name :</span> {{ tweet.name }} |
+			<span class="datetime"> {{ tweet.date }} </span>
+		</div>
+		<div>
+			<input type="button"  (click)="del()" value="Delete" class="btn-del">
     </div>
-	</div>
+		</div>
 		<div class="body">
 			{{ tweet.msg }}
 		</div>
