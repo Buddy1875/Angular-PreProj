@@ -1,7 +1,8 @@
 import { Component, OnInit } from "@angular/core";
 import { Input } from "@angular/core";
 import { Tweet } from "../tweet";
-import { FirebaseService } from "../firebase.service"
+import { FirebaseService } from "../firebase.service";
+import swal from "sweetalert2";
 
 @Component({
   selector: "app-display-twitty",
@@ -42,14 +43,23 @@ export class DisplayTwittyComponent implements OnInit {
   }
 
   del() {
-    if ( window.confirm("confirm") ) {
-      this.firebaseService.deleteTweet
-        ( this.tweet.id ).then(() => {
+    if (window.confirm("confirm")) {
+      this.firebaseService
+        .deleteTweet(this.tweet.id)
+        .then(() => {
           alert("Delete Complete");
         })
         .catch(err => {
           alert("Delete Failure");
         });
     }
+  }
+
+  showmodel() {
+    swal.fire({
+      title: "model",
+      html: "test",
+      icon: "success"
+    });
   }
 }
