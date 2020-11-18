@@ -16,7 +16,16 @@
   font-size: 16px;
 }
 
-.datetime{
+.datetime {
   color: rgb(84, 124, 47);
   font-size: 16px;
+}
+
+.btn-del {
+  border: none;
+}
+
+.del {
+  display: flex;
+  flex-direction: space-between;
 }

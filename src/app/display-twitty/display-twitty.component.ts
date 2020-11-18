@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { Input } from "@angular/core";
 import { Tweet } from "../tweet";
+import { FirebaseService } from "../firebase.service"
 
 @Component({
   selector: "app-display-twitty",
@@ -8,14 +9,14 @@ import { Tweet } from "../tweet";
   styleUrls: ["./display-twitty.component.css"]
 })
 export class DisplayTwittyComponent implements OnInit {
-  constructor() {}
+  constructor(private firebaseService: FirebaseService) {}
 
   @Input() tweet: Tweet;
   ngOnInit() {
     this.tweet = {
       ...this.tweet,
       date: this.timeAgo(this.tweet.date.toDate())
-    }
+    };
   }
 
   timeAgo(val: Date) {
@@ -38,5 +39,17 @@ export class DisplayTwittyComponent implements OnInit {
       return `${diffHouse} Hour(s) ago`;
     }
     return `${diffDay} day(s) ago`;
+  }
+
+  del() {
+    if ( window.confirm("confirm") ) {
+      this.firebaseService.deleteTweet
+        ( this.tweet.id ).then(() => {
+          alert("Delete Complete");
+        })
+        .catch(err => {
+          alert("Delete Failure");
+        });
+    }
   }
 }

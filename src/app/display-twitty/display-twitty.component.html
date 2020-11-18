@@ -1,8 +1,11 @@
 <div class="container">
 	<div class="head">
-		<span>Name : </span> {{ tweet.name }} | <span class="datetime"> {{ tweet.date }} </span>
+    <div class="del">
+      <span>Name : </span> {{ tweet.name }} | <span class="datetime"> {{ tweet.date }} </span>
+      <input type="button" value="Delete" class="btn-del">
+    </div>
 	</div>
-	<div class="body">
-		{{ tweet.msg }}
+		<div class="body">
+			{{ tweet.msg }}
+		</div>
 	</div>
-</div>
