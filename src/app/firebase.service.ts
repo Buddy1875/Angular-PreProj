@@ -21,7 +21,7 @@ export class FirebaseService {
       msg: messege,
       date: firebase.default.firestore.Timestamp.now()
     };
-    const ref = this.firestore.collection("tweet").add(tweet);
+    const ref = this.firestore.collection("twitty").add(tweet);
     ref.then(newRef => {
       const upDateID = {
         id: newRef.id
@@ -30,10 +30,10 @@ export class FirebaseService {
     });
     return ref;
   }
-//
+  //
   deleteTweet(id: string) {
     return this.firestore
-      .collection("tweet")
+      .collection("twitty")
       .doc(id)
       .delete();
   }
