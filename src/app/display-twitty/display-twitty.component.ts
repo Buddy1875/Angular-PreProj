@@ -2,6 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { Input } from "@angular/core";
 import { Tweet } from "../tweet";
 import { FirebaseService } from "../firebase.service";
+
 import swal from "sweetalert2";
 
 @Component({
@@ -23,7 +24,7 @@ export class DisplayTwittyComponent implements OnInit {
   timeAgo(val: Date) {
     const now = new Date();
     const diff = Math.abs(now.getTime() - val.getTime());
-    const diffDay = Math.ceil(diff / (1000 * 3600 * 24));
+    const diffDay = Math.floor(diff / (1000 * 3600 * 24));
     const diffHouse = Math.ceil(diff / (1000 * 3600));
     const diffMinute = Math.ceil(diff / (1000 * 60));
     const diffSecond = Math.ceil(diff / 1000);
